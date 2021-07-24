@@ -393,6 +393,22 @@ body {
   color: #fff;
 }
 
+.client-form__inp::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.client-form__inp:-ms-input-placeholder {
+  color: #fff;
+}
+
+.client-form__inp::-ms-input-placeholder {
+  color: #fff;
+}
+
+.client-form__inp::placeholder {
+  color: #fff;
+}
+
 .team {
   background-color: #fff;
   text-align: center;
