@@ -3,6 +3,10 @@
     font-size: 12px;
   }
 
+  .title-h2 {
+    font-size: 2rem;
+  }
+
   .nav-btn {
     display: flex;
   }
@@ -62,6 +66,7 @@
   .logotype__link {
     width: 4rem;
   }
+
   .services-list__img-border {
     border         : 2px solid #fff;
     border-radius  : 50%;
@@ -72,14 +77,49 @@
     height         : 3rem;
     margin-bottom  : 1rem;
   }
-  
+
   .services-list__img {
     height: 1.2rem;
   }
+
   .about__logo {
     width: 18rem;
   }
+
   .projects-slider__item {
     height: 240px;
+  }
+}
+
+@media (max-width: 468px) {
+  .title-h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-list {
+    flex-wrap: wrap;
+
+    &__item {
+      width        : 33%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer__title-border {
+    margin-bottom: 60px;
+  }
+
+  .footer-list__link {
+    padding: 0;
+
+    &::before {
+      left: calc(50% - 15px);
+      top : -35px;
+    }
+  }
+
+  .popup-form__title {
+    max-width : 240px;
+    text-align: center;
   }
 }

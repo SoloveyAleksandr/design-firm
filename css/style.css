@@ -61,6 +61,10 @@ body {
   margin: 20px auto;
 }
 
+.default-block {
+  padding: 50px 0;
+}
+
 .header {
   padding: 25px 0 10px;
   position: fixed;
@@ -212,9 +216,7 @@ body {
 }
 
 .about {
-  min-height: calc(100vh - 104px);
   background-color: #fff;
-  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +249,6 @@ body {
 }
 
 .services {
-  padding: 50px 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.9);
   color: #d8d8d8;
@@ -317,7 +318,6 @@ body {
 }
 
 .projects {
-  padding: 50px 0;
   background-color: #fff;
   text-align: center;
 }
@@ -345,7 +345,6 @@ body {
 }
 
 .client-form-wrapper {
-  padding: 50px 0;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   color: #d8d8d8;
@@ -395,13 +394,11 @@ body {
 }
 
 .team {
-  padding: 50px 0;
   background-color: #fff;
   text-align: center;
 }
 
 .footer {
-  padding: 50px 0;
   background-color: rgba(0, 0, 0, 0.98);
   text-align: center;
   color: #d8d8d8;
@@ -429,28 +426,23 @@ body {
   padding-left: 40px;
 }
 
-.footer-list__instagram::before {
+.footer-list__link::before {
   content: '';
   position: absolute;
   left: 0;
   bottom: -3px;
   width: 30px;
   height: 30px;
-  background-image: url(../images/feather_instagram.svg);
   background-size: cover;
   background-position: center center;
 }
 
+.footer-list__instagram::before {
+  background-image: url(../images/feather_instagram.svg);
+}
+
 .footer-list__phone::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 30px;
-  height: 30px;
   background-image: url(../images/feather_phone-call.svg);
-  background-size: cover;
-  background-position: center center;
 }
 
 .copyright {

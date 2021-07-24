@@ -68,6 +68,10 @@ body {
   margin     : 20px auto;
 }
 
+.default-block {
+  padding: 50px 0;
+}
+
 .header {
   padding         : 25px 0 10px;
   position        : fixed;
@@ -149,13 +153,13 @@ body {
 
 .logotype__link {
   display: block;
-  width: 7rem;
+  width  : 7rem;
 }
 
 .logotype__img {
-  object-fit: cover;
+  object-fit     : cover;
   object-position: center center;
-  width: 100%;
+  width          : 100%;
 }
 
 .bg-container {
@@ -193,9 +197,7 @@ body {
 }
 
 .about {
-  min-height      : calc(100vh - 104px);
   background-color: #fff;
-  padding         : 50px 0;
   display         : flex;
   align-items     : center;
   justify-content : center;
@@ -222,7 +224,6 @@ body {
 }
 
 .services {
-  padding         : 50px 0;
   text-align      : center;
   background-color: rgba(0, 0, 0, 0.9);
   color           : #d8d8d8;
@@ -274,7 +275,6 @@ body {
 }
 
 .projects {
-  padding         : 50px 0;
   background-color: #fff;
   text-align      : center;
 }
@@ -300,7 +300,6 @@ body {
 }
 
 .client-form-wrapper {
-  padding         : 50px 0;
   background-color: rgba(0, 0, 0, 0.6);
   text-align      : center;
   color           : #d8d8d8;
@@ -343,13 +342,11 @@ body {
 }
 
 .team {
-  padding         : 50px 0;
   background-color: #fff;
   text-align      : center;
 }
 
 .footer {
-  padding         : 50px 0;
   background-color: rgba(0, 0, 0, 0.98);
   text-align      : center;
   color           : #d8d8d8;
@@ -369,30 +366,25 @@ body {
 .footer-list__link {
   position    : relative;
   padding-left: 40px;
+
+  &::before {
+    content            : '';
+    position           : absolute;
+    left               : 0;
+    bottom             : -3px;
+    width              : 30px;
+    height             : 30px;
+    background-size    : cover;
+    background-position: center center;
+  }
 }
 
 .footer-list__instagram::before {
-  content            : '';
-  position           : absolute;
-  left               : 0;
-  bottom             : -3px;
-  width              : 30px;
-  height             : 30px;
-  background-image   : url(../images/feather_instagram.svg);
-  background-size    : cover;
-  background-position: center center;
+  background-image: url(../images/feather_instagram.svg);
 }
 
 .footer-list__phone::before {
-  content            : '';
-  position           : absolute;
-  left               : 0;
-  bottom             : -3px;
-  width              : 30px;
-  height             : 30px;
-  background-image   : url(../images/feather_phone-call.svg);
-  background-size    : cover;
-  background-position: center center;
+  background-image: url(../images/feather_phone-call.svg);
 }
 
 .copyright {
@@ -494,20 +486,20 @@ body {
   justify-content: center;
   cursor         : pointer;
   margin-right   : 15px;
-  display: none;
-  position: relative;
-  z-index: 1100;
+  display        : none;
+  position       : relative;
+  z-index        : 1100;
 
   &._active {
     .nav-btn__burger {
-      transform: rotate(225deg);
+      transform       : rotate(225deg);
       background-color: #fff;
     }
 
     .nav-btn__burger::before,
     .nav-btn__burger::after {
-      transform: rotate(270deg);
-      top      : 0;
+      transform       : rotate(270deg);
+      top             : 0;
       background-color: #fff;
     }
   }

@@ -6,6 +6,15 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
+        responsive: [
+            {
+                breakpoint: 468,
+                settings: {
+                    slidesToShow: 1,
+                    autoplaySpeed: 2500,
+                }
+            }
+        ]
     });
 
 })
@@ -28,6 +37,8 @@ function submitForm(e) {
 }
 
 function activePopup() {
+    menuBtn.classList.remove('_active');
+    menuList.classList.remove('_active');
     popup.classList.add('_active');
 }
 
