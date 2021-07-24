@@ -147,6 +147,17 @@ body {
   width: 100%;
 }
 
+.logotype__link {
+  display: block;
+  width: 7rem;
+}
+
+.logotype__img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
 .bg-container {
   background-image     : url(../images/Penthouse-Wohnzimmer-1_small.jpg);
   background-size      : cover;
@@ -195,6 +206,10 @@ body {
   max-width  : 550px;
   margin     : 0 auto;
   font-weight: 400;
+}
+
+.about__logo {
+  width: 23rem;
 }
 
 .title-border {
@@ -249,13 +264,13 @@ body {
   display        : flex;
   align-items    : center;
   justify-content: center;
-  width          : 70px;
-  height         : 70px;
-  margin-bottom  : 15px;
+  width          : 4.3rem;
+  height         : 4.3rem;
+  margin-bottom  : 1rem;
 }
 
 .services-list__img {
-  height: 30px;
+  height: 1.9rem;
 }
 
 .projects {
@@ -406,13 +421,13 @@ body {
   display        : flex;
   align-items    : center;
   justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s;
+  opacity        : 0;
+  visibility     : hidden;
+  transition     : .3s;
 }
 
 .popup._active {
-  opacity: 1;
+  opacity   : 1;
   visibility: visible;
 }
 
@@ -449,7 +464,7 @@ body {
   padding         : 5px 15px;
   color           : #d8d8d8;
   outline         : none;
-  margin-bottom: 15px;
+  margin-bottom   : 15px;
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.2);
@@ -457,15 +472,71 @@ body {
 }
 
 .popup-form__inp-label {
-  color: #b8b8b8;
+  color        : #b8b8b8;
   margin-bottom: 5px;
 }
 
 .popup-form__btn {
-  color: #fff;
+  color       : #fff;
   border-color: #fff;
+
   &:hover {
     background-color: #fff;
-    color: #000;
+    color           : #000;
   }
+}
+
+.nav-btn {
+  display        : 40px;
+  height         : 40px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  cursor         : pointer;
+  margin-right   : 15px;
+  display: none;
+  position: relative;
+  z-index: 1100;
+
+  &._active {
+    .nav-btn__burger {
+      transform: rotate(225deg);
+      background-color: #fff;
+    }
+
+    .nav-btn__burger::before,
+    .nav-btn__burger::after {
+      transform: rotate(270deg);
+      top      : 0;
+      background-color: #fff;
+    }
+  }
+}
+
+.nav-btn__burger {
+  position: relative;
+}
+
+.nav-btn__burger,
+.nav-btn__burger::before,
+.nav-btn__burger::after {
+  width           : 30px;
+  height          : 4px;
+  border-radius   : 4px;
+  background-color: $gray;
+  transition      : .3s;
+}
+
+.nav-btn__burger::before,
+.nav-btn__burger::after {
+  position: absolute;
+  content : '';
+}
+
+.nav-btn__burger::before {
+  top: 8px;
+}
+
+.nav-btn__burger::after {
+  top: -8px;
 }

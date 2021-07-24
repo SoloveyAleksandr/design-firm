@@ -1,1 +1,89 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .nav-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-list-wrapper {
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .nav-list-wrapper._active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 25px 0 40px;
+    height: 100vh;
+  }
+  .nav-list__item {
+    margin: 5px 0;
+  }
+  .nav-list__link {
+    color: #fff;
+  }
+  .nav-list__link::after {
+    background-color: #fff;
+  }
+  .nav-list__btn {
+    color: #fff;
+    border-color: #fff;
+    margin-top: 20px;
+  }
+  .nav-list__btn:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  .logotype__link {
+    width: 4rem;
+  }
+  .services-list__img-border {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .services-list__img {
+    height: 1.2rem;
+  }
+  .about__logo {
+    width: 18rem;
+  }
+  .projects-slider__item {
+    height: 240px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -34,3 +34,14 @@ function activePopup() {
 function deactivePopup() {
     popup.classList.remove('_active');
 }
+
+
+const menuBtn = document.getElementById('nav-btn');
+const menuList = document.getElementById('menu-list');
+
+menuBtn.addEventListener('click', openMenu);
+
+function openMenu() {
+    menuBtn.classList.toggle('_active');
+    menuList.classList.toggle('_active');
+}
