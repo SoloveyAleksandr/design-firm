@@ -214,9 +214,12 @@
         <h2 class="client-form__title title-h2">бесплатная <br> консультация</h2>
         <span class="client-form__title-border title-border"></span>
         <form class="client-form" action="#">
-            <input class="client-form__inp" type="text" name="client-name" id="" placeholder="Введите ваше имя">
-            <input class="client-form__inp" type="text" name="client-phone" id="" placeholder="Введите ваш телефон">
-            <input class="client-form__inp" type="text" name="client-email" id="" placeholder="Введите ваш email">
+            <input class="text-input client-form__inp" type="text" required name="client-name" id=""
+                placeholder="Введите ваше имя *">
+            <input class="text-input client-form__inp" type="text" required name="client-phone" id=""
+                placeholder="Введите ваш телефон *">
+            <input class="text-input client-form__inp" type="text" name="client-email" id=""
+                placeholder="Введите ваш email">
             <button class="client-form__btn default-btn" type="submit">заказать консультацию</button>
         </form>
     </div>
@@ -277,9 +280,10 @@
             <h3 class="popup-form__title title-h4">отправить заявку</h3>
             <span class="popup-form__title-border title-border"></span>
             <label class="popup-form__inp-label" for="inp-name">Ваше имя:</label>
-            <input type="text" id="inp-name" placeholder="Иван Иванович" class="popup-form__inp">
+            <input type="text" id="inp-name" placeholder="Иван Иванович" required class="text-input popup-form__inp">
             <label class="popup-form__inp-label" for="inp-phone">Контактный телефон:</label>
-            <input type="text" id="inp-phone" placeholder="+375 29 123 45 56" class="popup-form__inp">
+            <input type="text" id="inp-phone" placeholder="+375 29 123 45 56" required
+                class="text-input popup-form__inp">
             <button class="popup-form__btn default-btn" type="submit">отправить</button>
         </form>
     </div>

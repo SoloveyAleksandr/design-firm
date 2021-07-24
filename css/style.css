@@ -345,7 +345,7 @@ body {
 }
 
 .client-form-wrapper {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #d8d8d8;
 }
@@ -386,27 +386,28 @@ body {
 .client-form__inp {
   padding: 5px 10px;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
   border: 2px solid #d8d8d8;
   border-radius: 50px;
   margin: 10px 0;
   color: #fff;
+  outline: none;
 }
 
 .client-form__inp::-webkit-input-placeholder {
-  color: #fff;
+  color: white;
 }
 
 .client-form__inp:-ms-input-placeholder {
-  color: #fff;
+  color: white;
 }
 
 .client-form__inp::-ms-input-placeholder {
-  color: #fff;
+  color: white;
 }
 
 .client-form__inp::placeholder {
-  color: #fff;
+  color: white;
 }
 
 .team {
@@ -638,5 +639,10 @@ body {
 
 .nav-btn__burger::after {
   top: -8px;
+}
+
+.text-input:focus {
+  -webkit-box-shadow: 0 0 4px #fff;
+          box-shadow: 0 0 4px #fff;
 }
 /*# sourceMappingURL=style.css.map */
