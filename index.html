@@ -212,10 +212,10 @@
   <div class="client-form-wrapper default-block">
     <h2 class="client-form__title title-h2">бесплатная <br> консультация</h2>
     <span class="client-form__title-border title-border"></span>
-    <form class="client-form" action="sendmail.php">
-      <input class="text-input client-form__inp" type="text" required name="name" placeholder="Введите ваше имя *">
-      <input class="text-input client-form__inp" type="text" required name="phone" placeholder="Введите ваш телефон *">
-      <input class="text-input client-form__inp" type="text" name="email" placeholder="Введите ваш email">
+    <form class="client-form" action="telegram.php" method="POST">
+      <input class="text-input client-form__inp" type="text" required name="user_name" placeholder="Введите ваше имя *">
+      <input class="text-input client-form__inp" type="text" required name="user_phone" placeholder="Введите ваш телефон *">
+      <input class="text-input client-form__inp" type="text" name="user_email" placeholder="Введите ваш email">
       <button class="client-form__btn default-btn" type="submit">заказать консультацию</button>
     </form>
   </div>

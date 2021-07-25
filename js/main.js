@@ -22,7 +22,7 @@ $(function () {
 const headerBtn = document.getElementById('navListBtn');
 const popup = document.getElementById('popup');
 const popupBg = document.getElementById('popup-bg');
-const form = document.getElementById('popup-form');
+// const form = document.getElementById('popup-form');
 const mainBtn = document.getElementById('main-screen__btn');
 
 headerBtn.addEventListener('click', activePopup);
@@ -30,7 +30,7 @@ mainBtn.addEventListener('click', activePopup);
 
 popupBg.addEventListener('click', deactivePopup);
 
-form.addEventListener('submit', submitForm);
+// form.addEventListener('submit', submitForm);
 
 function submitForm(e) {
     e.preventDefault();
